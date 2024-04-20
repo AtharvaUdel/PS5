@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\UD\NewFolder1\**" />
+    <Compile Remove="Controllers\UD\NewFolder\**" />
+    <Content Remove="Controllers\UD\NewFolder1\**" />
+    <Content Remove="Controllers\UD\NewFolder\**" />
+    <EmbeddedResource Remove="Controllers\UD\NewFolder1\**" />
+    <EmbeddedResource Remove="Controllers\UD\NewFolder\**" />
+    <None Remove="Controllers\UD\NewFolder1\**" />
+    <None Remove="Controllers\UD\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -15,11 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\UD\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
